@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import RequireAuth from './lib/auth/RequireAuth'
 import Login from './pages/auth/Login'
 import Valentines from './pages/events/Valentines'
@@ -13,50 +14,51 @@ import Welcome from './pages/Welcome'
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Welcome />} />
-      <Route path="/login" element={<Login />} />
-      <Route
-        path="/menu"
-        element={
-          <RequireAuth>
-            <MainMenu />
-          </RequireAuth>
-        }
-      />
-      <Route
-        path="/letters"
-        element={
-          <RequireAuth>
-            <Letters />
-          </RequireAuth>
-        }
-      />
-      <Route
-        path="/letters/new"
-        element={
-          <RequireAuth>
-            <WriteLetter />
-          </RequireAuth>
-        }
-      />
-      <Route
-        path="/letters/edit/:id"
-        element={
-          <RequireAuth>
-            <EditLetter />
-          </RequireAuth>
-        }
-      />
-      <Route
-        path="/letters/:id"
-        element={
-          <RequireAuth>
-            <LetterDetail />
-          </RequireAuth>
-        }
-      />
-      {/* <Route
+    <>
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/menu"
+          element={
+            <RequireAuth>
+              <MainMenu />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/letters"
+          element={
+            <RequireAuth>
+              <Letters />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/letters/new"
+          element={
+            <RequireAuth>
+              <WriteLetter />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/letters/edit/:id"
+          element={
+            <RequireAuth>
+              <EditLetter />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/letters/:id"
+          element={
+            <RequireAuth>
+              <LetterDetail />
+            </RequireAuth>
+          }
+        />
+        {/* <Route
         path="/cute-thoughts"
         element={
           <RequireAuth>
@@ -64,32 +66,34 @@ function App() {
           </RequireAuth>
         }
       /> */}
-      <Route
-        path="/timeline"
-        element={
-          <RequireAuth>
-            <Timeline />
-          </RequireAuth>
-        }
-      />
-      <Route
-        path="/events"
-        element={
-          <RequireAuth>
-            <Valentines />
-          </RequireAuth>
-        }
-      />
-      <Route
-        path="/things"
-        element={
-          <RequireAuth>
-            <ThingsToDo />
-          </RequireAuth>
-        }
-      />
+        <Route
+          path="/timeline"
+          element={
+            <RequireAuth>
+              <Timeline />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/events"
+          element={
+            <RequireAuth>
+              <Valentines />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/things"
+          element={
+            <RequireAuth>
+              <ThingsToDo />
+            </RequireAuth>
+          }
+        />
 
-    </Routes>
+      </Routes>
+      <Analytics />
+    </>
   )
 }
 
