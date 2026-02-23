@@ -8,34 +8,34 @@ function Valentines() {
             {/* Background Polaroid Strips */}
             <div className="valentine-background">
                 <div className="strip strip-1">
-                    <img src="/public/photos/photo2.jpg" />
+                    <img src="/photos/photo2.jpg" />
 
-                    <img src="/public/photos/photo9.jpg" />
-                    <img src="/public/photos/photo6.jpg" />
+                    <img src="/photos/photo9.jpg" />
+                    <img src="/photos/photo6.jpg" />
                 </div>
 
                 <div className="strip strip-2">
-                    <img src="/public/photos/photo4.jpg" />
-                    <img src="/public/photos/photo13.jpg" />
+                    <img src="/photos/photo4.jpg" />
+                    <img src="/photos/photo13.jpg" />
 
                 </div>
 
                 <div className="strip strip-3">
-                    <img src="/public/photos/photo7.jpg" />
-                    <img src="/public/photos/photo8.jpg" />
-                    <img src="/public/photos/photo3.jpg" />
+                    <img src="/photos/photo7.jpg" />
+                    <img src="/photos/photo8.jpg" />
+                    <img src="/photos/photo3.jpg" />
                 </div>
 
                 <div className="strip strip-4">
-                    <img src="/public/photos/photo10.jpg" />
-                    <img src="/public/photos/photo11.jpg" />
-                    <img src="/public/photos/photo12.jpg" />
+                    <img src="/photos/photo10.jpg" />
+                    <img src="/photos/photo11.jpg" />
+                    <img src="/photos/photo12.jpg" />
                 </div>
 
                 <div className="strip strip-5">
-                    <img src="/public/photos/photo5.jpg" />
+                    <img src="/photos/photo5.jpg" />
 
-                    <img src="/public/photos/photo14.jpg" />
+                    <img src="/photos/photo14.jpg" />
                 </div>
             </div>
             <div className="valentine-content">
